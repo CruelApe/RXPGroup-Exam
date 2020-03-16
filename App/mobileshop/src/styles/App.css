@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282c34 !important;
+}
+
+.App {
+  text-align: center;
+  color: white;
+}
+
+/* Style the header */
+.App-header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.App-article {
+  float: left;
+  width: 70%;
+}
+
+/* Style the list inside the menu */
+.App-article ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* .App-header, .App-article, .App-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-aside {
+  float: right;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.App-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .App-article, .App-aside {
+    width: 100%;
+    height: auto;
+  }
+}
