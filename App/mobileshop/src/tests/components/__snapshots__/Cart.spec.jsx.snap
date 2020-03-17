@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Should render Cart component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(Cart)>
+    <Cart
+      decreaseProductFromCart={[Function]}
+      increaseProductFromCart={[Function]}
+      products={Array []}
+      removeProductFromCart={[Function]}
+      total={0}
+    >
+      <div>
+        <Card
+          body={true}
+          className="cart-main-card"
+          inverse={true}
+          tag="div"
+        >
+          <div
+            className="cart-main-card card text-white card-body"
+          >
+            <CardHeader
+              className="cart-cardheader"
+              tag="div"
+            >
+              <div
+                className="cart-cardheader card-header"
+              >
+                Shopping Cart Total: 
+                $0.00
+              </div>
+            </CardHeader>
+            <CardBody
+              tag="div"
+            >
+              <div
+                className="card-body"
+              >
+                <CardText
+                  tag="p"
+                >
+                  <p
+                    className="card-text"
+                  >
+                    No items to display.
+                  </p>
+                </CardText>
+              </div>
+            </CardBody>
+          </div>
+        </Card>
+      </div>
+    </Cart>
+  </Connect(Cart)>
+</Provider>
+`;

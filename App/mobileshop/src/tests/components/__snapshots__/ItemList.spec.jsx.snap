@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Should render Item component 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ItemList>
+    <div
+      className="box"
+    >
+      <h3
+        className="center"
+      >
+        Available Phones
+      </h3>
+      <CardDeck
+        tag="div"
+      >
+        <div
+          className="card-deck"
+        >
+          <Connect(Item)>
+            <Item
+              addProductToCart={[Function]}
+              products={
+                Array [
+                  Object {
+                    "Id": 1,
+                    "Image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/iphone-x/iphone-x-silver-grid.png",
+                    "Name": "Apple iPhone X",
+                    "Price": 299,
+                    "PriceDisplay": "$299.00",
+                    "Quantity": 0,
+                  },
+                  Object {
+                    "Id": 2,
+                    "Image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/iphone-8/iphone-8-silver-grid.png",
+                    "Name": "Apple iPhone 8",
+                    "Price": 100,
+                    "PriceDisplay": "$100.00",
+                    "Quantity": 0,
+                  },
+                  Object {
+                    "Id": 4,
+                    "Image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/samsung-galaxy-s9/samsung-galaxy-s9-purple-front.png",
+                    "Name": "Samsung Galaxy S9",
+                    "Price": 149,
+                    "PriceDisplay": "$149.00",
+                    "Quantity": 0,
+                  },
+                  Object {
+                    "Id": 5,
+                    "Image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/oppo-r15-pro/oppo-r15-device-front.png",
+                    "Name": "OPPO R15 Pro",
+                    "Price": 199,
+                    "PriceDisplay": "$199.00",
+                    "Quantity": 0,
+                  },
+                  Object {
+                    "Id": 6,
+                    "Image": "https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/sony-xperia-xa2/sony_xperia_xa2_front_v1.png",
+                    "Name": "Sony Xperia XA2",
+                    "Price": 19,
+                    "PriceDisplay": "$19.00",
+                    "Quantity": 0,
+                  },
+                ]
+              }
+            >
+              <div
+                key="1"
+              >
+                <Card
+                  body={true}
+                  className="item-card"
+                  inverse={true}
+                  tag="div"
+                >
+                  <div
+                    className="item-card card text-white card-body"
+                  >
+                    <CardHeader
+                      tag="div"
+                    >
+                      <div
+                        className="card-header"
+                      >
+                        Apple iPhone X
+                      </div>
+                    </CardHeader>
+                    <img
+                      alt="Apple iPhone X"
+                      className="item-image"
+                      src="https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/iphone-x/iphone-x-silver-grid.png"
+                    />
+                    <CardBody
+                      tag="div"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <CardText
+                          tag="p"
+                        >
+                          <p
+                            className="card-text"
+                          >
+                            $299.00
+                          </p>
+                        </CardText>
+                        <Button
+                          color="secondary"
+                          onClick={[Function]}
+                          tag="button"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+              <div
+                key="2"
+              >
+                <Card
+                  body={true}
+                  className="item-card"
+                  inverse={true}
+                  tag="div"
+                >
+                  <div
+                    className="item-card card text-white card-body"
+                  >
+                    <CardHeader
+                      tag="div"
+                    >
+                      <div
+                        className="card-header"
+                      >
+                        Apple iPhone 8
+                      </div>
+                    </CardHeader>
+                    <img
+                      alt="Apple iPhone 8"
+                      className="item-image"
+                      src="https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/iphone-8/iphone-8-silver-grid.png"
+                    />
+                    <CardBody
+                      tag="div"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <CardText
+                          tag="p"
+                        >
+                          <p
+                            className="card-text"
+                          >
+                            $100.00
+                          </p>
+                        </CardText>
+                        <Button
+                          color="secondary"
+                          onClick={[Function]}
+                          tag="button"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+              <div
+                key="4"
+              >
+                <Card
+                  body={true}
+                  className="item-card"
+                  inverse={true}
+                  tag="div"
+                >
+                  <div
+                    className="item-card card text-white card-body"
+                  >
+                    <CardHeader
+                      tag="div"
+                    >
+                      <div
+                        className="card-header"
+                      >
+                        Samsung Galaxy S9
+                      </div>
+                    </CardHeader>
+                    <img
+                      alt="Samsung Galaxy S9"
+                      className="item-image"
+                      src="https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/samsung-galaxy-s9/samsung-galaxy-s9-purple-front.png"
+                    />
+                    <CardBody
+                      tag="div"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <CardText
+                          tag="p"
+                        >
+                          <p
+                            className="card-text"
+                          >
+                            $149.00
+                          </p>
+                        </CardText>
+                        <Button
+                          color="secondary"
+                          onClick={[Function]}
+                          tag="button"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+              <div
+                key="5"
+              >
+                <Card
+                  body={true}
+                  className="item-card"
+                  inverse={true}
+                  tag="div"
+                >
+                  <div
+                    className="item-card card text-white card-body"
+                  >
+                    <CardHeader
+                      tag="div"
+                    >
+                      <div
+                        className="card-header"
+                      >
+                        OPPO R15 Pro
+                      </div>
+                    </CardHeader>
+                    <img
+                      alt="OPPO R15 Pro"
+                      className="item-image"
+                      src="https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/oppo-r15-pro/oppo-r15-device-front.png"
+                    />
+                    <CardBody
+                      tag="div"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <CardText
+                          tag="p"
+                        >
+                          <p
+                            className="card-text"
+                          >
+                            $199.00
+                          </p>
+                        </CardText>
+                        <Button
+                          color="secondary"
+                          onClick={[Function]}
+                          tag="button"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+              <div
+                key="6"
+              >
+                <Card
+                  body={true}
+                  className="item-card"
+                  inverse={true}
+                  tag="div"
+                >
+                  <div
+                    className="item-card card text-white card-body"
+                  >
+                    <CardHeader
+                      tag="div"
+                    >
+                      <div
+                        className="card-header"
+                      >
+                        Sony Xperia XA2
+                      </div>
+                    </CardHeader>
+                    <img
+                      alt="Sony Xperia XA2"
+                      className="item-image"
+                      src="https://www.telstra.com.au/content/dam/tcom/personal/mobile-phones/product-catalogue/sony-xperia-xa2/sony_xperia_xa2_front_v1.png"
+                    />
+                    <CardBody
+                      tag="div"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <CardText
+                          tag="p"
+                        >
+                          <p
+                            className="card-text"
+                          >
+                            $19.00
+                          </p>
+                        </CardText>
+                        <Button
+                          color="secondary"
+                          onClick={[Function]}
+                          tag="button"
+                        >
+                          <button
+                            aria-label={null}
+                            className="btn btn-secondary"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            Add to cart
+                          </button>
+                        </Button>
+                      </div>
+                    </CardBody>
+                  </div>
+                </Card>
+              </div>
+            </Item>
+          </Connect(Item)>
+        </div>
+      </CardDeck>
+    </div>
+  </ItemList>
+</Provider>
+`;
