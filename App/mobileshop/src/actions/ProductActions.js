@@ -1,3 +1,5 @@
+// This will handle actions pertaining to Products
+
 import { ADD_PRODUCT } from './actiontypes/ProductsActionType'
 
 export const AddProductToCart = (id) => {

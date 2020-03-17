@@ -2,6 +2,7 @@
 // and to be able to use by its parent list.
 
 import React, { Component } from 'react'
+import '../styles/Item.css'
 import { Card, CardText, CardHeader, CardBody, Button } from 'reactstrap'
 import { connect } from 'react-redux'
 import { AddProductToCart } from '../actions/ProductActions'
@@ -16,10 +17,10 @@ class Item extends Component {
     render() {
         return this.props.products.map(product => {
             return(
-                <div>
-                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', alignItems: 'center' }} key={product.Id}>
+                <div key={product.Id} >
+                    <Card body inverse className="item-card">
                         <CardHeader>{product.Name}</CardHeader>
-                        <img width='170px' height='300px' src={product.Image} alt={product.Name} />
+                        <img className="item-image" src={product.Image} alt={product.Name} />
                         <CardBody>
                             <CardText>{product.PriceDisplay}</CardText>
                             <Button onClick={()=>{this.handleAddToCart(product.Id)}}>Add to cart</Button>

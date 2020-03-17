@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Card, CardText, CardHeader, CardBody, Button } from 'reactstrap'
-import { RemoveProductFromCart } from '../actions/CartActions'
+import '../styles/Cart.css'
+import { IconButton } from '@material-ui/core'
+import Icon from '@material-ui/core/Icon';
+import { Card, CardText, CardHeader, CardBody, Button, Container, Row, Col } from 'reactstrap'
+import { RemoveProductFromCart, IncreaseProductFromCart, DecreaseProductFromCart } from '../actions/CartActions'
 
 class Cart extends Component {
 
@@ -9,6 +12,16 @@ class Cart extends Component {
     handleRemoveFromCart = (id)=>{
         this.props.removeProductFromCart(id); 
     }
+
+    // Event handler for button click "Increase"
+    handleIncreaseProductFromCart = (id)=>{
+        this.props.increaseProductFromCart(id); 
+    }
+
+    // Event handler for button click "Decrease"
+    handleDecreaseProductFromCart = (id)=>{
+        this.props.decreaseProductFromCart(id); 
+    }    
 
     render() {
 
@@ -24,23 +37,52 @@ class Cart extends Component {
         (  
             this.props.products.map(product => {
                 return(
-                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-                        <CardBody>
-                            <div style={{ display: 'flex',  justifyContent: 'space-between' }}>
-                                <img width='25px' height='50px' src={product.Image} alt={product.Name} />
-                                <span style={{ fontSize: 'calc(2px + 2vmin)' }}>{product.Name} - {product.PriceDisplay}</span>
-                                <Button className="red" onClick={()=>{this.handleRemoveFromCart(product.Id)}}>Remove</Button>
-                            </div>
-                        </CardBody>
-                    </Card>                      
+                    <div key={product.Id} >
+                        <Card body inverse className="cart-card">
+                            <CardBody>
+                                <div className="cart-cardbody-div">
+                                    <Container fluid={true}>
+                                        <Row>
+                                            <Col xs="auto">
+                                                <img className="cart-image" src={product.Image} alt={product.Name} />
+                                            </Col>
+                                            <Col xs="5">
+                                                <Row>
+                                                    <span className="cart-product-name">{product.Name}</span>
+                                                </Row>
+                                                <Row>
+                                                    <span className="cart-product-price">{product.PriceDisplay}</span>
+                                                </Row>
+                                            </Col>
+                                            <Col xs="auto">
+                                                <Row>
+                                                    <b className="cart-product-quantity-label">Quantity:</b> 
+                                                    <IconButton aria-label="increase" size="small" onClick={()=>{this.handleIncreaseProductFromCart(product.Id)}}>
+                                                        <Icon color="primary">add_circle</Icon>
+                                                    </IconButton>
+                                                    <b className="cart-product-quantity">{product.Quantity}</b>
+                                                    <IconButton aria-label="decrese" size="small" onClick={()=>{this.handleDecreaseProductFromCart(product.Id)}}>
+                                                        <Icon color="secondary">remove_circle</Icon>
+                                                    </IconButton>
+                                                </Row>
+                                                <Row>
+                                                    <Button className="red" onClick={()=>{this.handleRemoveFromCart(product.Id)}}>Remove</Button>
+                                                </Row>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                            </CardBody>
+                        </Card>
+                    </div>                      
                 )
             })
         ) : <CardText>No items to display.</CardText>       
 
         return (
             <div>
-                <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', marginTop: '20px', marginRight: '15px' }}>
-                    <CardHeader style={{ backgroundColor: '#ff6d00' }}>Shopping Cart Total: { currentTotal }</CardHeader>
+                <Card body inverse className="cart-main-card">
+                    <CardHeader className="cart-cardheader">Shopping Cart Total: { currentTotal }</CardHeader>
                     <CardBody>
                         { productsInCart }
                     </CardBody>
@@ -62,7 +104,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     
     return{
-        removeProductFromCart: (id) => { dispatch(RemoveProductFromCart(id))}
+        removeProductFromCart: (id) => { dispatch(RemoveProductFromCart(id))},
+        increaseProductFromCart: (id) => { dispatch(IncreaseProductFromCart(id))},
+        decreaseProductFromCart: (id) => { dispatch(DecreaseProductFromCart(id))}
     }
 }
 
