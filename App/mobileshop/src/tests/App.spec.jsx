@@ -1,8 +1,6 @@
 import React from 'react';
-//import Renderer from 'react-test-renderer';
-import { render } from '@testing-library/react';
 
-import Enzyme, { shallow, mount } from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import productStore from '../store/ProductStore';

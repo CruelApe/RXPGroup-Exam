@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Item Should render Item component 1`] = `
+exports[`ItemList Should render ItemList component 1`] = `
 <Provider
   store={
     Object {
